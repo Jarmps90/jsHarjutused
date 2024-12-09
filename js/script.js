@@ -1,22 +1,79 @@
-const container = document.querySelector('.container');
+let currentNumber = '';
+let previousNumber = null;
+let operator = null;
+let value = null;
+const display = document.querySelector('.display');
 
-
-for(let i = 0; i < 3; i++) { 
-    const cell = document.createElement('div');
-    cell.classList.add('cell');
-    container.appendChild(cell);
+function numberBtn() {
+    const numbers = document.querySelectorAll('#numbers button');
+    
+    numbers.forEach((button) => {
+        button.addEventListener('click', () => {
+            currentNumber += button.textContent;
+            display.textContent = currentNumber;
+        });
+    });
 };
 
-function cellColor() { 
+function operators() {
+    const operators = document.querySelectorAll('#operator button');
+    
+    operators.forEach((button) => {
+        button.addEventListener('click', () => {
+            operator = button.id
+            display.textContent = '0';
+            previousNumber = parseFloat(currentNumber);
+            currentNumber = '';
+            
+        });
 
-const cell = document.querySelectorAll('.cell');
-
-cell.forEach((cell) => { 
-cell.addEventListener('mouseover', () => {
-    cell.style.backgroundColor = 'red';
-})
-}
-);
+    });
 };
 
-cellColor()
+
+
+function getEquals(){
+    const equals = document.querySelector('#equalsBtn');
+    
+        equals.addEventListener('click', () => {
+        if(currentNumber !== '') {
+            currentNumber = parseFloat(currentNumber);
+            operate(currentNumber, operator, previousNumber);
+        }
+        currentNumber = value;
+        
+        });
+        
+    
+};
+
+
+function updateDisplay(value){
+    
+    display.textContent = value;
+};
+
+function operate(currentNumber, operator, previousNumber) {
+    
+    switch (operator) { 
+    case 'add':
+        value = previousNumber + currentNumber;
+        break;
+    case 'subtract':
+        value = previousNumber - currentNumber;
+        break;
+    default:
+        value = null;
+    }
+
+
+    console.log(value);
+    updateDisplay(value);
+};
+    
+
+
+
+numberBtn();
+operators();
+getEquals();

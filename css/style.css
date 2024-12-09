@@ -1,15 +1,54 @@
-.container {
-  border: solid, red, 1px;
-  height: 500px;
+body{
   display: flex;
-  align-items: center;
+  height: 95vh;
+  width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
-.cell {
-  border: solid, 1px, black;
-  width: 50px;
-  height: 50px;
+button{
+  width: 45px;
+  height: 45px;
   margin: 5px;
+}
+.container{
+  border: solid 1px black;
+  width: 270px;
+  height: 225px;
+}
+
+.display{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 5vh;
+  font-weight: 500;
+  border: solid 1px black;
+  margin: 5px;
+  height:  40px;
+
+}
+
+.buttons{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
+
+#numb{
+  display: flex;
+  flex-wrap: wrap;
+  width: 170px;
+  height: 150px;
+}
+
+#operator{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+

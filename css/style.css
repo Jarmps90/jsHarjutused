@@ -50,5 +50,11 @@ button{
   flex-wrap: wrap;
 }
 
+#equals{
+  display: flex;
+  flex-wrap: wrap;
+  height: 58px;
+
+}
 
 

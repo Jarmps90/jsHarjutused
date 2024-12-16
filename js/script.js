@@ -21,7 +21,6 @@ function operators() {
     operators.forEach((button) => {
         button.addEventListener('click', () => {
             operator = button.id
-            display.textContent = '0';
             previousNumber = parseFloat(currentNumber);
             currentNumber = '';
             
@@ -40,7 +39,7 @@ function getEquals(){
             currentNumber = parseFloat(currentNumber);
             operate(currentNumber, operator, previousNumber);
         }
-        currentNumber = value;
+        //currentNumber = value;
         
         });
         
@@ -50,7 +49,7 @@ function getEquals(){
 
 function updateDisplay(value){
     
-    display.textContent = value;
+    display.textContent = Math.round(value * 100) / 100;
 };
 
 function operate(currentNumber, operator, previousNumber) {

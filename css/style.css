@@ -42,3 +42,18 @@ tbody{
 tfoot{
   font-weight: bold;
 }
+
+#planets{
+  border: solid black 2px;
+  border-bottom: 1px solid rgb(190,190,190);
+}
+#mercury, #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune{
+  border: solid black 2px;
+  border-bottom:  1px solid rgb(190,190,190);
+  border-top:  1px solid rgb(190,190,190);
+}
+
+#pluto{
+  border: solid 2px black;
+  border-top: 1px solid rgb(190,190,190);
+}

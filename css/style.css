@@ -57,3 +57,7 @@ tfoot{
   border: solid 2px black;
   border-top: 1px solid rgb(190,190,190);
 }
+
+h1{
+  background-color: rgb(31, 23, 13);
+}

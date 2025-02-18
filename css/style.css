@@ -1,60 +1,11 @@
-@font-face {
-  font-family: 'Acme';
-  src: 
-      url('../fonts/Acme-Regular.woff2') format('woff2'),
-      url('../fonts/AirAmerica-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+main > div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
 }
 
-@font-face {
-  font-family: 'Air America';
-  src: 
-      url('../fonts/AirAmerica-Regular.woff2') format('woff2'),
-      url('../fonts/AirAmerica-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-.grechen-fuemen-regular {
-  font-family: "Grechen Fuemen", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-/* General setup */
-
-html {
-  font-size: 10px;
-  margin: 0;
-  font-family: sans-serif;
-}
-
-body {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-  
-}
-
-/* Typography */
-
-h1 {
-  font-size: 3.2rem;
-  font-family: 'Air America';
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-family: 'Air America';
-}
-
-p {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  word-spacing: 0.6rem;
-  font-family: "Grechen Fuemen";
+main > div > div {
+  width: 50px;
+  height: 50px;
+  border: 5px solid greenyellow;
 }

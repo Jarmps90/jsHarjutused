@@ -18,6 +18,13 @@
   font-display: swap;
 }
 
+.grechen-fuemen-regular {
+  font-family: "Grechen Fuemen", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* General setup */
 
 html {
@@ -49,5 +56,5 @@ p {
   font-size: 1.5rem;
   line-height: 1.6;
   word-spacing: 0.6rem;
-  font-family: 'Acme';
+  font-family: "Grechen Fuemen";
 }
